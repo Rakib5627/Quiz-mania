@@ -15,10 +15,16 @@ function App() {
         children : [
           {
             path : '/',
+            loader : async()=>{ 
+             return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
             element : <Home></Home>
           },
           {
             path: '/topics',
+            loader : async()=>{ 
+              return fetch('https://openapi.programming-hero.com/api/quiz');
+           },
             element: <Topics></Topics>
           },
           {
@@ -30,6 +36,9 @@ function App() {
             element:<Blogs></Blogs>
           }
         ]
+      },
+      {
+        path:'*',element: <div className='p-5 m-5'><h2 className='p-5 text-danger'>Not Found! 404 </h2></div>
       }
 
     ])

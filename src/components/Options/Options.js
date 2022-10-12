@@ -1,24 +1,30 @@
 import React from 'react';
+import { ToastContainer , toast } from "react-toastify";
+import { EyeIcon } from '@heroicons/react/24/solid';
 
-const Options = () => {
+const Options = ({options , correctAnswer}) => {
+
+    // console.log(options)
+    const isAns = () =>{
+         if (options===correctAnswer) {
+          toast.success("your answer is correct.", {theme: "colored",autoClose: 700,})
+         }    
+        else{
+          toast.error("your answer is wrong correct.", {theme: "colored",autoClose: 700, })
+        }
+}
+    
+
     return (
         <div>
             <div>
             <div className="ans ml-2">
-                          <label className="radio"> <input type="radio" name="brazil" value="brazil"/> <span>Brazil</span>
-                          z</label>    
-                        </div>
-                        <div className="ans ml-2">
-                          <label className="radio"> <input type="radio" name="Germany" value="Germany"/> <span>Germany</span>
+                          <label className="radio"> 
+                           <input onClick={isAns} type="radio" name="options" value="options"/> 
+                           <span>{options}</span>
+                           <ToastContainer>
+                           </ToastContainer>
                           </label>    
-                        </div>
-                        <div className="ans ml-2">
-                          <label className="radio"> <input type="radio" name="Indonesia" value="Indonesia"/> <span>Indonesia</span>
-                         </label>    
-                        </div>
-                        <div className="ans ml-2">
-                           <label className="radio"> <input type="radio" name="Russia" value="Russia"/> <span>Russia</span>
-                           </label>    
                         </div>
             </div>
         </div>

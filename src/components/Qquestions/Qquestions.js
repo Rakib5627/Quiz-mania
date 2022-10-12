@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer , toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Options from '../Options/Options';
 
 const Qquestions = ({quizQuestion}) => {

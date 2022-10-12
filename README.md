@@ -1,3 +1,16 @@
+Project Name : Quiz Mania
+
+Live WEbsite Link : https://eclectic-crostata-dbe758.netlify.app/
+
+What I have done in this project:
+*Created the project.
+*Call the Api dynamically.
+*Create All the components.
+*Finally made a quiz website
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

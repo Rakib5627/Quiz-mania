@@ -7,10 +7,10 @@ const Options = ({options , correctAnswer}) => {
     // console.log(options)
     const isAns = () =>{
          if (options===correctAnswer) {
-          toast.success("your answer is correct.", {theme: "colored",autoClose: 1000,})
+          toast.success("your answer is correct.", {theme: "colored",autoClose: 2000,})
          }    
         else{
-          toast.error("your answer is wrong.", {theme: "colored",autoClose: 1000, })
+          toast.error("your answer is wrong.", {theme: "colored",autoClose: 2000, })
         }
 }
     

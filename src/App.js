@@ -13,6 +13,7 @@ function App() {
       {
         path:'/',
         element:<Main></Main>,
+        errorElement : <div className='p-5 m-5'><h2 className='p-5 text-danger'>Not Found! 404 </h2></div>,
         children : [
           {
             path : '/',

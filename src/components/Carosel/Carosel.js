@@ -15,6 +15,10 @@ const Carosel = () => {
           </div>
         </div>
       </div>
+      <div className='d-md-none'>
+      <h2 className='text-info'>Test Your knowledge.</h2>
+               <h5 className=''>Here you are at the worlds one of the finest <br /> quiz website for web developers. <br /> Test your gained knowledge here.</h5>
+      </div>
    </div>
     );
 };

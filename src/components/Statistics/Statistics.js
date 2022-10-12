@@ -9,10 +9,10 @@ const Statistics = () => {
 
     return (
         <div>
-            <div>
+            <div >
             <h1 className='text-info'>Chart of questions per quiz:</h1>
             <div className='d-flex justify-content-center'>
-                <LineChart width={600} height={300} data={quizData} margin={{ top: 6, right: 6, bottom: 6, left: 0 }}>
+                <LineChart width={300} height={300} data={quizData} margin={{ top: 6, right: 6, bottom: 6, left: 0 }}>
                 <Line type="monotone" dataKey="total" stroke="#3498db" />
                 <CartesianGrid strokeDasharray="5 2" />
                 <XAxis dataKey="name" />

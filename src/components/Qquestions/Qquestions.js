@@ -43,7 +43,7 @@ const Qquestions = ({quizQuestion}) => {
                     </div>
                     <div>
                        {options.map((options) => <Options
-                       key={options.answer}
+                    //    key={options.answer}
                        options={options}
                        correctAnswer={correctAnswer}
                        ></Options>

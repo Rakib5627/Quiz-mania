@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Homecards = (homecards) => {
     console.log(homecards.homecards);
-    const {name , total ,logo }= homecards.homecards;
+    const {name , total ,logo, id }= homecards.homecards;
+    
+
 
     return (
         <div>
@@ -15,7 +17,7 @@ const Homecards = (homecards) => {
                        <p className="card-text"><small>{total} Questions</small></p>
                      </div>
                      <div className="">
-                      <Link className='btn btn-success'>Start Quiz</Link>
+                      <Link to={`/${id}`} className='btn btn-success'>Start Quiz</Link>
                      </div>
                   </div>
                 </div>

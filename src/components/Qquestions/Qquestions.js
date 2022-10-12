@@ -1,6 +1,7 @@
 import React from 'react';
 import Swal from "sweetalert2";
-// import { EyeIcon } from '@heroicons/react/24/solid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { ToastContainer , toast } from "react-toastify";
 import Options from '../Options/Options';
 
@@ -11,6 +12,7 @@ const Qquestions = ({quizQuestion}) => {
 
     const Toast = Swal.mixin({
         position: "bottom-center",
+        theme: "colored",
         toast: true,
         timer: 2500,
         showConfirmButton:false,
@@ -31,11 +33,11 @@ const Qquestions = ({quizQuestion}) => {
                                  <h5 className="mt-1 ml-2">{question}</h5>
                             </div>
                             <div>
-                                 <button onClick={() =>Toast.fire({icon: "success", title: correctAnswer,})
+                                 <div className='rounded-5' onClick={() =>Toast.fire({icon: "success", title: correctAnswer,})
                              }> 
-                             abc
+                             <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                              <ToastContainer />
-                             </button>                            
+                             </div>                            
                             </div>
                          </div>                       
                     </div>

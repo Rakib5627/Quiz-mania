@@ -1,16 +1,16 @@
 import React from 'react';
 import { ToastContainer , toast } from "react-toastify";
-import { EyeIcon } from '@heroicons/react/24/solid';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Options = ({options , correctAnswer}) => {
 
     // console.log(options)
     const isAns = () =>{
          if (options===correctAnswer) {
-          toast.success("your answer is correct.", {theme: "colored",autoClose: 700,})
+          toast.success("your answer is correct.", {theme: "colored",autoClose: 1000,})
          }    
         else{
-          toast.error("your answer is wrong correct.", {theme: "colored",autoClose: 700, })
+          toast.error("your answer is wrong.", {theme: "colored",autoClose: 1000, })
         }
 }
     
@@ -22,8 +22,7 @@ const Options = ({options , correctAnswer}) => {
                           <label className="radio"> 
                            <input onClick={isAns} type="radio" name="options" value="options"/> 
                            <span>{options}</span>
-                           <ToastContainer>
-                           </ToastContainer>
+                           <ToastContainer/>
                           </label>    
                         </div>
             </div>

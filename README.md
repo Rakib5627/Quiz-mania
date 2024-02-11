@@ -7,6 +7,7 @@ What I have done in this project:
 *Call the Api dynamically.
 *Create All the components.
 *Finally made a quiz website
+*The website is fully responsive
 
 
 
